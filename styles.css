@@ -1,5 +1,37 @@
 body{
+    background-color: rgb(15, 5, 15);
     margin: 0;
-    background: pink;
-    text-align: center;
+    height: 150vh;
+}
+
+#menu {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-family: "Ibarra Real Nova", serif;
+
+    display: block;
+    text-decoration: none;
+    padding: 0.5vw;
+
+    transition: 400ms ease;
+}
+
+#menu-items {
+    margin-left: 12vw;
+}
+
+#menu-items:hover > .menu-item {
+    transition: 400ms ease;
+    opacity: 0.2;
+}
+
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
 }
